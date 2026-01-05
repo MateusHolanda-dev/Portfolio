@@ -75,11 +75,11 @@ body{
     border-radius: 50%;
     border: 4px solid var(--vidro);
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
-
+    animation: flutuar 5s ease-in-out infinite;
 }
 
 h1{
-    color: var(--primaria);;
+    color: var(--primaria);
     font-weight: bold;
     margin: 5px;
 }
@@ -224,4 +224,23 @@ h1{
     font-size: 3rem;
     color: var(--claro);
     margin-bottom: 20px;
+}
+
+.particulas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%), 
+                radial-gradient(circle at 90% 80%, var(--secundaria), transparent 20%), 
+                var(--maisescuro);
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(0deg); }
+    100% { transform: translateY(0) rotate(0deg); }
 }
