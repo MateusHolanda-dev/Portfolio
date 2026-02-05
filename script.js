@@ -1,5 +1,5 @@
 const titulo = document.querySelector(".cabecalho-sub-titulo");
-const texto = "Desenvolvedor Front End";
+const texto = "Desenvolvedor Front-End";
 let i = 0;
 
 titulo.textContent = "";
