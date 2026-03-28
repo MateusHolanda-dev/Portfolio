@@ -274,3 +274,83 @@ h1 {
 .icons i:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  section {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .cabecalho {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
+  }
+
+  .sobre {
+    padding: 4rem 1rem;
+  }
+
+  .sobre-caixa {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  #tecnologias {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icons i {
+    font-size: 45px;
+  }
+
+  .projetos-caixa {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .projetos-card {
+    width: 100%;
+  }
+
+  .contatos-caixa {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contatos-paragrafo a {
+    width: 100%;
+  }
+
+  .sobre-titulo,
+  .projetos-titulo,
+  .contatos-titulo {
+    font-size: 2rem;
+  }
+
+  .sobre-paragrafo {
+    text-align: left;
+  }
+}
